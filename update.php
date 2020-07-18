@@ -25,12 +25,7 @@
 </head>
 <body class="bg-info">
     <?php include 'navbar.php';?>
-    <header>
-        <div class="jumbotron main_header" >
-            <h1 class="display-4">Big Library Media</h1>
-            <p class="lead">Choose an asset.</p>
-        </div>
-    </header>
+    
      <div class="container mx-auto font-weight-bold  w-75">
         <form action="actions/a_update.php" method ="post" class="mx-auto">
             <div class="form-group row justify-content-center">

@@ -7,12 +7,7 @@
 </head>
 <body class="bg-info">
     <?php include 'navbar.php';?>
-    <header>
-        <div class="jumbotron main_header" >
-            <h1 class="display-4"></h1>
-            <p class="lead"></p>
-        </div>
-    </header>
+  
     <div class="container mt-4 mx-auto text-center">
         <div class="card col-sm-5 mx-auto">
             <h5 class="card-title">Title: <?php echo $_GET['title'] ?>, 

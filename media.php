@@ -11,12 +11,7 @@
 </head>
 <body class="bg-info">
     <?php include 'navbar.php';?>
-    <header>
-        <div class="jumbotron main_header" >
-            <h1 class="display-4">Big Library Media</h1>
-            <p class="lead">Choose an asset.</p>
-        </div>
-    </header>
+
     <div class="container-fluid row row-cols-1 row-cols-md-2 row-cols-lg-4 mx-auto my-4">
         <ul class="list-group list-group-flush p-1">
             <?php
@@ -28,6 +23,10 @@
                         echo "
                         <li class='list-group-item p-1'>Media: ". $row['title']." </li>";
                     }
+                        echo "
+                        <li class='list-group-item p-1'>
+                            <a href='publishers.php' class='btn btn-secondary btn-block '>Back</a>
+                        </li>";
                     // Close connection
                     mysqli_close($conn);
                 }
@@ -36,9 +35,6 @@
         </ul>
         
     </div>
-    <div class="container w-25 justify-content-left">
-            <a href='publishers.php' class='btn btn-secondary btn-block mx-auto '>Back</a>
-        </div> 
     <div class="card-footer text-dark bg-transparent text-center font-weight-bold"> &copy; 2020 </div>
 </body>
 </html>

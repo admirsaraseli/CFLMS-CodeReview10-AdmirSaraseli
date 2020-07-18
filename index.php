@@ -11,13 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="bg-info">
-	<header>
-        <div class="jumbotron main_header mb-0  text-info text-sm-center ">
-            <h1 class="display-4 mt-4">Big Library Media</h1>
-            <p class="lead">Choose an asset.</p>
-        </div>
-    </header>
  	<?php include 'navbar.php';?>
+ 	
     <div class="container-fluid row row-cols-1 row-cols-md-2 row-cols-lg-4 mx-auto my-4">
     <?php
     	require_once 'actions/db_connect.php';

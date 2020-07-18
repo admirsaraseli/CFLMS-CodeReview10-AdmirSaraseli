@@ -26,19 +26,19 @@
 <body class="bg-info">
     <?php include 'navbar.php';?>
     
-     <div class="container mx-auto font-weight-bold  w-75">
+     <div class="container mx-auto font-weight-bold mt-2 w-75">
         <form action="actions/a_update.php" method ="post" class="mx-auto">
             <div class="form-group row justify-content-center">
                 <div class="form-group col-sm-8">
-                    <label for="status" class="mr-3">Status:</label>
+                    <label for="status" class="mr-3 my-auto">Status:</label>
                      <?php if ($data['status'] == 1) {
                         echo '
                         <input type="radio"  name="status" checked value="1"><span class="mr-2"> Available</span>
                         <input type="radio"  name="status" value="0"> Reserved';
                     }else {
                         echo '
-                        <input type="radio"  name="status"  value="1"> Available
-                        <input type="radio"  name="status" checked value="0">Reserved';
+                        <input type="radio"  name="status"  value="1" ><span class="mr-2"> Available</span>
+                        <input type="radio"  name="status" checked value="0"> Reserved';
                     }  ?>
                 </div>
             </div>

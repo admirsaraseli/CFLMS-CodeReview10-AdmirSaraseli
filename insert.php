@@ -8,7 +8,7 @@
 <body class="bg-info">
     <?php include 'navbar.php';?>
 
-    <div class="container mx-auto font-weight-bold">
+    <div class="container mx-auto font-weight-bold mt-2">
         <form action="actions/a_insert.php" method ="post" class="mx-auto" >
             <div class="form-group row justify-content-center">
                 <div class="form-group col-sm-8">
